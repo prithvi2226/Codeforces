@@ -1,0 +1,46 @@
+#include<iostream>
+
+
+using namespace std;
+
+int main(){
+	int pmatrix[5][5], i, j, m = 0, n = 0, count = 0, sum = 0, k = 0;
+	for(i = 0; i < 5; i++){
+		for(j = 0; j < 5; j++){
+			cin >> pmatrix[i][j];
+			
+			sum = sum + pmatrix[i][j];
+			if(sum == 1){
+				k++;
+				if(k == 1){
+					m = i;
+					n = j;
+				}
+
+			}
+		}
+	}
+
+	while(m != 2){
+		count++;
+		if(m >= 3){
+			m--;
+		}
+		else{
+			m++;
+		}
+	}
+
+	while(n != 2){
+		count++;
+		if(n >= 3){
+			n--;
+		}
+		else{
+			n++;
+		}
+	}
+
+	cout << count << endl;
+
+}
