@@ -28,21 +28,21 @@ int main(){
 
 	if(lower > upper){
 		for(int i = 0; i < n; i++){
-			tolower(s[i]);
+			s[i] = tolower(s[i]);
 		}
 	}
 	else if(upper > lower){
 		for(int i = 0; i < n; i++){
-			toupper(s[i]);
+			s[i] = toupper(s[i]);
 		}
 	}
 	else if(upper == lower){
 		for(int i = 0; i < n; i++){
-			tolower(s[i]);
+			s[i] = tolower(s[i]);
 		}
 	}
 
-	cout << s;
+	cout << s << endl;
 
 	return 0;
 }
