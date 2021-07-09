@@ -1,0 +1,46 @@
+#include<iostream>
+#include<cmath>
+#include<string>
+#include<cstring>
+#include<cstdlib>
+
+using namespace std;
+
+int main(){
+
+	int primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 100000000};
+
+	int n, m;
+	cin >> n >> m;
+
+	int i;
+	bool flag = false;
+	//int length = sizeof(primes)/sizeof(primes[0]);
+
+	//cout << length;
+
+	for(i = 0; i < 15 ; i++){
+		if(primes[i] == n && primes[i+1] == m){
+
+			flag = true;
+			break;
+		}
+	}
+	if(flag == true){
+		cout << "YES" << endl;
+	}
+	else if(flag == false){
+		cout << "NO" << endl;
+	}
+
+
+
+
+
+
+	return 0;
+}
+
+
+
+
