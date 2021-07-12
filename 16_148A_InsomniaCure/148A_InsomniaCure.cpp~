@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cstdlib>
+#include<string>
+#include<cstring>
+#include<cmath>
+
+using namespace std;
+
+int main(){
+
+	int array[4];
+
+	int i;
+
+	for(i = 0; i < 5; i++){
+		cin >> array[i];
+	}
+
+	int  i, c;
+	int count = 0;
+	c = array[4];
+	
+	for(i = 0; i <= c; i++){
+		if(i % array[0] != 0 && i % array[1] != 0 && i % array[2] != 0 && i % array[3] != 0){
+			count ++;
+		}
+		
+	}
+
+	int x;
+	x = array[4] - count;
+	
+	cout << x << endl;
+
+
+
+	return 0;
+}
+
+
+
