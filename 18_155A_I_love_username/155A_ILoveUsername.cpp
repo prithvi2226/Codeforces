@@ -1,0 +1,45 @@
+#include<iostream>
+#include<string>
+#include<cstdlib>
+#include<cmath>
+#include<cstring>
+
+using namespace std;
+
+int main(){
+
+	int n, i;
+	int count = 0;
+	int array[10001];
+
+	cin >> n;
+
+	for(i = 0; i < n; i++){
+		cin >> array[i];
+	}
+
+	for(i = 0; i < n; i++){
+		if(array[i+1] > array[i]){
+			count ++;
+			//cout << count << endl;
+		}
+	}
+
+	cout << count << endl;
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
