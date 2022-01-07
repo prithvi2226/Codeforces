@@ -23,6 +23,7 @@ int main(){
 		if(s[i] != '+'){
 			array[k] = s[i];
 			k++;
+      //wassgud
 		}
 	}
 
