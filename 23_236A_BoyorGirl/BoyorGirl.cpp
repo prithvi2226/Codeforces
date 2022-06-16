@@ -1,0 +1,39 @@
+#include<iostream>
+#include<cstdio>
+#include<string>
+#include<algorithm>
+
+using namespace std;
+
+
+int main(){
+
+  int k;
+
+  string s;
+
+  cin >> s;
+
+  sort(s.begin(), s.end());
+
+  s.erase(unique(s.begin(), s.end()), s.end());
+
+  if(s.length() % 2 == 0){
+    cout << "CHAT WITH HER!" << endl;
+  }
+  
+  else{
+    cout << "IGNORE HIM!" << endl;
+  }
+
+
+
+
+
+
+  return 0;
+}
+
+
+
+
