@@ -1,23 +1,37 @@
+
+/*
+	Name : Prithvi Prathap
+	Email : ppratha1@asu.edu
+	Application : Codeforces Young Physicist
+	Language : C++
+	Date : 21 - 12 - 2022
+*/
+
+
 #include<iostream>
 
 using namespace std;
 
-int main(){
+int main(int argc, char const *argv[])
+{
 
-	int n, x, y, z, xi = 0, yi = 0, zi = 0;
-	
-	//cout << "Enter no integers to follow" << endl;
+	int n, a, b, c;
+
 	cin >> n;
-	
-	//cout << "Enter the coordinates for those points" << endl;
-	for(int i = 0; i<n; i++){
-		cin >> x >> y >> z;
-		xi += x;
-		yi += y;
-		zi += z;
+
+	int count = 0, x1 = 0, y1 = 0, z1 = 0;
+
+	while(n--){
+		
+		cin >> a >> b >> c;
+
+		x1 += a;
+		y1 += b;
+		z1 += c;
+
 	}
 
-	if(xi == 0 && yi == 0 && zi == 0){
+	if(x1 == 0 & y1 == 0 & z1 == 0){
 		cout << "YES" << endl;
 	}
 	else{
@@ -25,6 +39,85 @@ int main(){
 	}
 
 
-
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
