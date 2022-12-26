@@ -1,34 +1,139 @@
+
+
+/*
+	Name : Prithvi Prathap
+	Email : ppratha1@asu.edu
+	Application : Codeforces Borze 
+	Language : C++
+	Date : 25 - 12 - 2022
+*/
+
 #include<iostream>
 #include<cstdlib>
-#include<cstring>
 #include<string>
+#include<cstdlib>
+#include<cstring>
 #include<cmath>
+
+
 
 using namespace std;
 
-int main(){
-	string s, count;
-	int m;
-	cin >> s;
-	m = s.length();
-	for(int i = 0; i <= m; i++){
-		if(s[i] == '.'){
-			count += '0';
+
+int main(int argc, char const *argv[])
+{
+	string code, num = "";
+
+	cin >> code;
+
+	//cout << code << endl;
+
+	int len;
+
+	len = code.length();
+
+	//cout << len << endl;
+
+	for(int i = 0; i <= len; i++)
+	{
+		/* code */
+		if(code[i] ==	 '.'){
+			num += '0';
 		}
-		else if(s[i] == '-' && s[i+1] == '.'){
-			count += '1';
+		else if(code[i] == '-' && code[i+1] == '.'){
+			num += '1';
 			i++;
 		}
-		else if(s[i] == '-' && s[i+1] == '-'){
-			count += '2';
+		else if(code[i] == '-' && code[i+1] == '-'){
+			num += '2';
 			i++;
 		}
-
-
 	}
-	cout << count << endl;
+
+
+	cout << num << endl;
+
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
