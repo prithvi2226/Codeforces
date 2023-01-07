@@ -1,48 +1,225 @@
+
+/*
+	User: Prithvi Prathap
+	Application: Codeforces Word
+	Language: CPP
+	Date: 6 - 1 - 23
+
+*/
+
+
+
 #include<iostream>
 #include<cstdlib>
-#include<cstring>
 #include<string>
+#include<math.h>
 #include<cmath>
+#include<cctype>
+#include<ctype.h>
+
 
 using namespace std;
 
 
-int main(){
+int main(int argc, char const *argv[])
+{
+	
+	string word;
+	int low = 0;
+	int high = 0;
 
-	string s;
-	cin >> s;
-	int n;
-	int upper = 0;
-	int lower = 0;
+	cin >> word;
 
-	n = s.size();
 
-	for(int i = 0; i < n; i++){
-		if (isupper(s[i])){
-			upper++;
+
+	int len;
+
+	len = word.length();
+
+	for(int i = 0; i < len; i ++){
+		if(islower(word[i])){
+			low ++;
 		}
-		else{
-			lower++;
+		if(isupper(word[i])){
+			high ++;
+		}
+
+	}
+
+	//cout << low << endl;
+	//cout << high << endl;
+
+
+	if(low > high){
+		for(int i = 0; i < len; i ++){
+			word[i] = tolower(word[i]);
+		}
+	}
+	else if(high > low){
+		for(int i = 0; i < len; i ++){
+			word[i] = toupper(word[i]);
+		}
+
+	}
+	else{
+		for(int i = 0; i < len; i ++){
+			word[i] = tolower(word[i]);
 		}
 	}
 
-	if(lower > upper){
-		for(int i = 0; i < n; i++){
-			s[i] = tolower(s[i]);
-		}
-	}
-	else if(upper > lower){
-		for(int i = 0; i < n; i++){
-			s[i] = toupper(s[i]);
-		}
-	}
-	else if(upper == lower){
-		for(int i = 0; i < n; i++){
-			s[i] = tolower(s[i]);
-		}
-	}
+	cout << word << endl;
 
-	cout << s << endl;
+
+
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
