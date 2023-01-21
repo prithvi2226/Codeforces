@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 #include<cstdlib>
 #include<string>
@@ -37,6 +38,86 @@ int main(){
 
 	return 0;
 }
+
+*/
+
+
+/*
+	User: Prithvi Prathap
+	Application: Codeforces Capitalize Word
+	Language: CPP
+	Date: 6 - 1 - 23
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
