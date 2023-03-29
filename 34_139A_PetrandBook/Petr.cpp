@@ -18,7 +18,7 @@ int Days(int num);
 int Days(int num){
 	
 	std::vector<std::pair<int, int>> week;
-	int a;
+	int a = num;
 	int read;
 
 	for(int i = 1; i <= 7; i++){
